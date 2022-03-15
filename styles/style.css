@@ -1,44 +1,324 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 .hero{
     width: 100vw;
-    height: 100vh;
+    height: 355vh;
     background: #020C1B;
+    color: #CBBA9C;
 }
-.nav-bar{
+nav{
     width: 100vw;
     height: 10vh;
-    /* background: rgb(34, 34, 34); */
     display: flex;
     align-items: center;
     justify-content: right;
 }
-.nav-bar ul{
+nav ul{
     width: 70%;
     display: flex;
     justify-content: right;
-    gap: 10px;
-    font-size: 18px;
+    font-size: 20px;
     list-style: none;
     padding-right: 20px;
+    gap: 20px;
 }
-.nav-bar ul li{
-    width: 50px;
+nav ul li{
+    width: 90px;
     height: 35px;
     text-align: center;
     border-radius: 5px;
     font-style: italic;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #CBBA9C;
+    padding-top: 5px;
 }
-.nav-bar ul li a{
+nav ul li a{
     text-decoration: none;
     color: #fff;
 }
-#resume{
-    padding-top: 10px;
-    width: 100px;
-    height: 45px;
+a:hover{
+    color: #CBBA9C;
+    cursor: pointer;
+}
+.container{
+    width: 100vw;
+    display: flex;
+}
+.container .side{
+    width: 5vw;
+    height: auto;
+    margin-left: 10px;
+    overflow-x: hidden;
+}
+.side .side-bar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+.side-bar .icons{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2rem;
+}
+.icons i{
+    font-size: 30px;
+    color: #fff;
+}
+.side-bar .line{
+    width: 1px;
+    height: 250px;
     border: 1px solid #CBBA9C;
+    position: absolute;
+    left: 1vw;
+    top: 52vh;
+}
+.container .main-container{
+    width: 90vw;
+    position: relative;
+    left: 2rem;
+    top: 10vh;
+}
+.main-container .home{
+    width: 80vw;
+    height: 77vh;
+    display: flex;
+    font-size: 25px;
+}
+.home .text{
+    width: 70%;
+    height: auto;
+}
+.home .text h2{
+    width: 100%;
+    font-size: 30px;
+}
+.text h2 span{
+    display: block;
+    font-size: 35px;
+    color: #fff;
+}
+.text .first{
+    height: 100px;
+    font-size: 30px;
+    color: #fff;
+}
+.text .second{
+    font-size: 30px;
+    color: #fff;
+    height: 30vh;
+}
+.text .talk-to-me{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid #CBBA9C;
+    border-radius: 20px;
+}
+.talk-to-me a{
+    color: #fff;
+    text-decoration: none;
+}
+.home .image{
+    width: 45%;
+    height: auto;
+    position: relative;
+    left: 8vw;
+    top: 5vh;
+}
+.home .image img{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: -1rem;
+    top: -1rem;
+    border-radius: 5px;
+    
+}
+.image .behind{
+    width: 300px;
+    height: 350px;
+    border: 1px solid #CBBA9C;
+    border-radius: 5px;
+}
+.main-container .aboutt{
+    width: 50vw;
+    display: flex;
+    margin-left: 3rem;
+}
+.aboutt .line{
+    width: 160px;
+    height: 1px;
+    border: 1px solid #CBBA9C;
+    margin: 12px;
+}
+.main-container .about{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.about .image{
+    width: 50%;
+}
+.about .image img{
+    position: absolute;
+    width: 42%;
+    height: 300px;
+    left: 1rem;
+}
+.about .about_me{
+    width: 50%;
+    border: 1px solid #CBBA9C;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 23px;
+    color: #fff;
+}
+.about_me div{
+    width: 100%;
+    display: flex;
+}
+.about_me div p{
+    width: 50%;
+    font-size: 20px;
+    color: #CBBA9C;
+}
+.about_me div p span{
+    padding-left: 5px;
+    color: #fff;
+}
+.main-container .projects{
+    width: 90vw;
+    color: #fff;
+    margin-top: 2rem;
+}
+.projects h2{
+    text-align: center;
+}
+.projects .cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+.cards .card{
+    width: 23%;
+    text-align: center;
+    font-size: 20px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card .text{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #727272;
+    margin-top: -5px;
+}
+
+.contact-us{
+    width: 90vw;
+    margin-top: 3rem;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    gap: 1rem;
+}
+.contact-us .social-media{
+    width: 49%;
+    height: auto;
+}
+.social-media div{
+    width: 100%;
+    display: flex;
+}
+.social-media div .circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #CBBA9C;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    padding: 7px;
+}
+.social-media div div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.social-media div div span{
+    width: 100%;
+    color: #CBBA9C;
+}
+.social-media div div p{
+    font-size: 16px;
+}
+.contact-us .contact-form{
+    width: 40%;
+    margin-left: 3rem;
+}
+.contact-form form .form-data div{
+  display: flex;
+  gap: 2rem;
+}
+.form-data div input{
+    width: 100%;
+    height: 45px;
+    background-color: #020C1B;
+    margin-bottom: 10px;
+    border: 1px solid #CBBA9C;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.form-data textarea{
+    background-color: #020C1B;
+    width: 100%;
+    border: 1px solid #CBBA9C;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+}
+form button{
+    width: 50%;
+    height: 40px;
+    color: #fff;
+    background: #020C1B;
+    border: 1px solid #CBBA9C;
+    font-size: 20px;
+    margin-left: 5.5rem;
+    border-radius: 5px;
+}
+.links{
+    display: flex;
+}
+.links ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-align: center;
+}
+.links ul li{
+    border: 1px solid #CBBA9C;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+footer{
+    width: 100vw;
+    background: #020C1B;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+footer p span{
+    color: red;
 }
