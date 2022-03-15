@@ -199,6 +199,8 @@ a:hover{
 }
 .projects h2{
     text-align: center;
+    font-size: 30px;
+    color: #fff;
 }
 .projects .cards{
     width: 100%;
