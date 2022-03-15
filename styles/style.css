@@ -3,9 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.bars{
+    display: none;
+}
 .hero{
     width: 100vw;
-    height: 355vh;
+    height: 375vh;
     background: #020C1B;
     color: #CBBA9C;
 }
@@ -15,6 +18,17 @@ nav{
     display: flex;
     align-items: center;
     justify-content: right;
+}
+nav .logo{
+    width: 30%;
+    height: 10vh;
+}
+.logo img{
+    width: 170px;
+    height: 100px;
+    position: absolute;
+    top: -.5rem;
+    left: -2rem;
 }
 nav ul{
     width: 70%;
@@ -52,6 +66,7 @@ a:hover{
     width: 5vw;
     height: auto;
     margin-left: 10px;
+    margin-top: 3rem;
     overflow-x: hidden;
 }
 .side .side-bar{
@@ -196,6 +211,10 @@ a:hover{
     width: 90vw;
     color: #fff;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .projects h2{
     text-align: center;
@@ -226,7 +245,20 @@ a:hover{
     background: #727272;
     margin-top: -5px;
 }
+.projects .skills{
+    width: 40%;
+    height: 120px;
+    /* border: 1px solid #CBBA9C; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.skills div ul{
+    list-style: circle;
+    list-style-position: inside;
 
+}
 .contact-us{
     width: 90vw;
     margin-top: 3rem;
@@ -323,4 +355,58 @@ footer{
 }
 footer p span{
     color: red;
+}
+
+ 
+/* RESPONSIVENESS */
+@media screen and (max-width: 1275px) {
+
+}
+/* MOBILE */
+@media screen and (max-width: 660px) {
+    .hero{
+        width: 100vw;
+    }
+    nav ul{
+        display: none;
+    }
+    .bars{
+        display: block;
+        padding-right: 2vw;
+        cursor: pointer;
+    }
+    .bars input{
+        display: none;
+    }
+    .bars i{
+        font-size: 30px;
+        color: #fff;
+    }
+    .side{
+        display: none;
+    }
+    .main-container{
+        width: 100vw;
+    }
+    .home{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .text .first{
+        height: 150px;
+    }
+    .talk-to-me{
+        position: absolute;
+        top: 40rem;
+        border-radius: 5px;
+    }
+    .home .image{
+        position: absolute;
+        top: 45rem;
+        left: 1rem;
+    }
+    .home .behind{
+        display: none;
+    }
 }
