@@ -4,9 +4,271 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Muhire Patrick</title>
+    <style>
+        :root{
+            --green: #CBBA9C;
+            --slate: #8892b0;
+            --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+            --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero{
+            background-color: #020C1B;
+            width: 100%;
+            height: auto;
+        }
+        .hero nav{
+            width: 100%;
+            height: 10vh;
+            background: #000916;
+            display: flex;
+
+        }
+        .hero nav ul{
+            display: flex;
+            color: #8892b0;
+            gap: 30px;
+            justify-content: start;
+            margin-left: 5rem;
+            padding-top: 1.2rem;
+            list-style: none;
+            font-size: 25px;
+        }
+        .hero nav .logo{
+            margin-top: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: clamp(20px, 8vw, 30px);
+            font-family: var(--font-mono);
+        }
+        .hero nav ul li{
+            color: white;
+        }
+        header{
+            color: white;
+            margin-left: 5rem;
+            margin-top: 1rem;
+        }
+        header h2{
+            font-size: clamp(20px, 8vw,30px);
+            font-family: var(--font-mono);
+        }
+        header p{
+            margin: 10px 0px;
+            font-size: 20px;
+            color: var(--green);
+        }
+        header div{
+          display: flex;
+          gap: 5px;
+        }
+        header .tags{
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        header .tags div{
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid var(--green);
+            border-radius: 5px;
+            padding-left: 20px;
+        }
+        .card-container{
+            color: white;
+            width: 80vw;
+            margin-left: 5rem;
+            margin-top: 1rem;
+            border: 1px solid #CBBA9C;
+            border-radius: 10px;
+        }
+        .card-container h2{
+            font-size: clamp(20px, 8vw,30px);
+            font-family: var(--font-mono);
+            padding: 5px 20px;
+        }
+        .card-container p{
+            margin: 10px 0px;
+            font-size: 20px;
+            color: white;
+            padding: 5px 20px;
+        }
+        .date{
+            color: var(--green);
+        }
+        .card-container .card div{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+        }
+        .card div div{
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            margin-left: 15px;
+            border: 1px solid #CBBA9C;
+        }
+        .card div a{
+            margin: 1px 20px;
+        }
+        footer{
+            width: 100%;
+            background: #020C1B;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            padding: 20px;
+        }
+        footer p span{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="hero">
+        <nav>
+            <a href="#" class="logo">CodingBlog</a>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <div class="container">
+            <header>
+                <h2>CodingBlog</h2>
+                <p>Blogging Garden for Programming tips,Tutorials,Trending Tools & Practices</p>
+                <div>
+                    <h2>Tags</h2>
+                    <span><i class="fa-solid fa-tags" style="color: #FFD233; padding-top: 15px; font-size: 30px;"></i></span>
+                </div>
+                <div class="tags">
+                    <div>
+                        <p>#Flutter</p>
+                    </div>
+                    <div>
+                        <p>#Angular</p>
+                    </div>
+                    <div>
+                        <p>#Google</p>
+                    </div>
+                    <div>
+                        <p>#Node.js</p>
+                    </div>
+                    <div>
+                        <p>#Express</p>
+                    </div>
+                    <div>
+                        <p>#Java</p>
+                    </div>
+                </div>
+                <h2>Articles</h2>
+            </header>
+            <div class="card-container">
+                 <div class="card">
+                     <p class="date">September 03, 2021</p>
+                     <h2>Why to choose Nestjs</h2>
+                     <div>
+                        <div>
+                            <p>#Flutter</p>
+                        </div>
+                        <div>
+                            <p>#Angular</p>
+                        </div>
+                        <div>
+                            <p>#Google</p>
+                        </div>
+                        <div>
+                            <p>#Node.js</p>
+                        </div>
+                     </div>
+                     <p>
+                        Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses 
+                        modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and 
+                        combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and
+                         FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also,
+                         provides compatibility with a wide range of other libraries, li
+                     </p>
+                     <!-- <a href="#" >Read more...</a> -->
+                 </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <p class="date">September 03, 2021</p>
+                    <h2>Why to choose Nestjs</h2>
+                    <div>
+                       <div>
+                           <p>#Flutter</p>
+                       </div>
+                       <div>
+                           <p>#Angular</p>
+                       </div>
+                       <div>
+                           <p>#Google</p>
+                       </div>
+                       <div>
+                           <p>#Node.js</p>
+                       </div>
+                    </div>
+                    <p>
+                       Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses 
+                       modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and 
+                       combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and
+                        FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also,
+                        provides compatibility with a wide range of other libraries, li
+                    </p>
+                    <!-- <a href="#" >Read more...</a> -->
+                </div>
+           </div>
+           <div class="card-container">
+            <div class="card">
+                <p class="date">September 03, 2021</p>
+                <h2>Why to choose Nestjs</h2>
+                <div>
+                   <div>
+                       <p>#Flutter</p>
+                   </div>
+                   <div>
+                       <p>#Angular</p>
+                   </div>
+                   <div>
+                       <p>#Google</p>
+                   </div>
+                   <div>
+                       <p>#Node.js</p>
+                   </div>
+                </div>
+                <p>
+                   Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses 
+                   modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and 
+                   combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and
+                    FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also,
+                    provides compatibility with a wide range of other libraries, li
+                </p>
+                <!-- <a href="#" >Read more...</a> -->
+            </div>
+       </div>
+       
+        </div>
+        <footer>
+            <p>Built with <span><i class="fa-regular fa-heart"></i></span> By Muhire Patrick</p>
+          </footer>
+    </div>
 </body>
 </html>

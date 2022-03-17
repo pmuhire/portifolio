@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .hero{
+            background-color: #020C1B;
+            width: 100%;
+            height: auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        .hero .vector{
+            width: 60%;
+            height: 50%;
+        }
+        .vector img{
+            width: 100%;
+            height: 100%;
+        }
+        .hero .login-form{
+            width: 40%;
+            height: 50%;
+        }
+        .login-form h2{
+            color: white;
+            font-size: 30px;
+        }
+        .login-form form{
+            width: 100%;
+            height: auto;
+        }
+        .login-form div{
+            padding: 10px;
+        }
+        .login-form form div input{
+            width: 70%;
+            height: 30px;
+            padding: 5px;
+            background: #C4C4C4;
+            border: 1px solid #CBBA9C;
+            border-radius: 5px;
+        }
+        .forgot_password{
+            width: 100%;
+            display: flex;
+            color: white;
+            justify-content: start;
+            height: 50px;
+        }
+        .forgot_password div{
+            width: 50%;
+            display: flex;
+            justify-content: start;
+            color: white;
+            background-color: red;
+        }
+        .forgot_password div input{
+            width: 5px;
+            height: 5px;
+        }
+        button{
+            width: 30%;
+            height: 30px;
+            margin-left: 6rem;
+            color: #020C1B;
+            background: #C4C4C4;
+            border: 1px solid #CBBA9C;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="vector">
+            <img src="../utils/undraw_secure_login_pdn4.svg" alt="">
+        </div>
+        <div class="login-form">
+            <h2>Welcome Back</h2>
+            <form action="#">
+                <div>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div>
+                    <input type="password" placeholder="password">
+                </div>
+                <!-- <div class="forgot_password">
+                    <div>
+                        <input type="checkbox" name="remember" id="rememberme">
+                        <label for="rememberme">Remember me</label>
+                    </div>
+                   <p>Forgot password</p>
+                </div> -->
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
