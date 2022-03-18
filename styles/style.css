@@ -153,8 +153,6 @@ nav ul li a{
 .container .home{
     width: 100%;
     height: 90vh;
-    /* background-color: red; */
-    /* height: auto; */
     display: flex;
     justify-content: space-between;
 }
@@ -189,9 +187,15 @@ nav ul li a{
    font-family: var(--font-mono);
 }
 .text .talk-to-me{
-    width: 200px;
-    height: 50px;
-    padding-top: 1rem;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    
+}
+.talk-to-me .talkToMe{
+    width: 150px;
+    height: 40px;
+    padding-top: .5rem;
     text-align: center;
     cursor: pointer;
     margin-top: 70px;
@@ -202,7 +206,7 @@ nav ul li a{
     border: 1px solid var(--green);
     border-radius: var(--border-radius);
 }
-.talk-to-me a{
+.talkToMe a{
     color: var(--green);
     background-color: transparent;
     text-decoration: none;
@@ -342,7 +346,12 @@ nav ul li a{
     font-size: 18px;
     color: var(--slate);
 }
-
+.mobile-projects{
+    display: none;
+}
+.mobile-projects .card{
+    display: none;
+}
 .contact-us{
     width: 90vw;
     margin-top: 3rem;
@@ -451,17 +460,18 @@ footer p span{
 /* PHONE */
 @media screen and (max-width: 660px) {
     body{
-        width: 100vw;
+        width: 70%;
         background-color: #020c1b;
+        
     }
     .hero{
         width: 100%;
         height: 300vh;
     }
     .bars{
-        /* position: absolute; */
+        position: absolute;
         display: inline;
-        /* right: 1rem; */
+        right: -5rem;
     }
     .bars input{
         display: none;
@@ -495,22 +505,33 @@ footer p span{
     /* CONTAINER */
     .container{
         width: 100%;
+        margin-top: 1rem;
     }
     .container .home{
-        width: 100%;
+        width: 98%;
         position: absolute;
         left: 10px;
         flex-direction: column;
     }
     .home .text{
-        width: 100%;
+        width: 98%;
 
+    }
+    /* .home .talk-to-me{} */
+    .home .text .talk-to-me{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        height: 200px;
+    }
+    .home .text .talk-to-me .talkToMe{
+        margin-top: .5rem;
     }
     
     .home .image{
         width: 90%;
         left: 20px;
-        margin-top: 10px;
+        margin-top: -5rem;
     }
     .image img{
         width: 100%;
@@ -537,13 +558,12 @@ footer p span{
     }
     .about .about_me{
         width: 90%;
-        /* border: none; */
         border: 1px solid var(--light-slate);
         border-radius: 5px;
         color: var(--lightest-slate);
         position: absolute;
         left: 25px;
-        top: 140vh;
+        top: 137vh;
     }
     .about_me div{
         width: 100%;
@@ -582,16 +602,108 @@ footer p span{
     .projects .cards{
         display: none;
     }
-    .projects .cards .card-one{
-        display: block;
+    .mobile-projects{
+       display: block;
+       position: absolute;
+       top: 260vh;
     }
-
+    .mobile-projects div{
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        background: #0a192f;
+    }
     /* CONTACT US */
     .contact-us{
+        display: flex;
+        position: absolute;
+        top: 260vh;
+        flex-direction: column;
+    }
+    .contact-us .social-media{
+        width: 85%;
+    }
+    .contact-us .links{
         display: none;
+    }
+    .contact-us .contact-form{
+        width: 90%;
+        margin-left: .5rem;
+    }
+    .contact-form form .form-data div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    form button{
+        margin-left: 5rem;
     }
     /* FOOTER */
     footer{
-        display: none;
+        width: 100%;
+        position: absolute;
+        top: 380vh;
+        left: 5px;
     }
+
+
+    /* BUTTON */
+    /* From cssbuttons.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--slate);
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
 }

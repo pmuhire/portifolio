@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Muhire</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        :root{
+            --green: #CBBA9C;
+            --slate: #8892b0;
+            --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+            --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero{
+            width: 100vw;
+            height: 100vh;
+            background-color: #00060f;
+        }
+        .hero nav{
+            width: 100vw;
+            height: 10vh;
+            background: #000916;
+            display: flex;
+
+        }
+        .hero nav ul{
+            display: flex;
+            color: #8892b0;
+            gap: 30px;
+            justify-content: start;
+            margin-left: 5rem;
+            padding-top: 1.2rem;
+            list-style: none;
+            font-size: 25px;
+        }
+        .hero nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .hero nav .logo{
+            margin-top: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: clamp(20px, 8vw, 30px);
+            font-family: var(--font-mono);
+        }
+        .hero nav ul li{
+            color: white;
+        }
+        header{
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 4rem;
+            margin-top: 20px;
+            padding-left: 8rem;
+        }
+        header .profile{
+            width: 20%;
+            height: 250px;
+            margin-top: 20px;
+            
+        }
+        .profile img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .text {
+            width: 80%;
+            margin-top: 30px;
+        }
+        .text div h2{
+            color: white;
+            font-size: clamp(20px, 8vw, 30px);
+            font-family: var(--font-mono);
+            margin-bottom: 10px;
+        }
+        .text div p{
+            width: 60%;
+            color: white;
+            font-size: 18px;
+            font-family: var(--font-sans);
+        }
+        .text div{
+            display: flex;
+            gap: 10px;
+        }
+        .text div span a{
+            color: dodgerblue;
+        }
+        .text div div{
+            width: 100px;
+            height: 30px;
+            border: 1px solid #CBBA9C;
+            padding: 2px 10px;
+            border-radius: 5px;
+            margin: 15px 5px;
+        }
+        .text div div a{
+            color: #1363b3;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+            bottom: 10px;
+        }
+        footer p span{
+            color: red;
+        }
+        @media screen and (max-width: 660px) {
+            .hero nav .logo{
+                display: none;
+            }  
+            header{
+                flex-direction: column;
+                gap: 0px;
+                margin-top: 5px;
+                padding-left: 2rem;
+            } 
+            header .profile{
+                width: 67%;
+                height: 200px;
+                padding-top: -1em;
+                padding-left: 3rem;
+            }
+            .text {
+                width: 90%;
+                margin-top: 10px;
+                padding-left: 20px;
+                text-align: center;
+            }
+        
+            .text div p{
+                width: 90%;
+                color: white;
+                font-size: 18px;
+                font-family: var(--font-sans);
+            }
+            .text div{
+                display: flex;
+                gap: 1px;
+                flex-wrap: wrap;
+            }
+            .text div div{
+                padding: 2px 5px;
+                margin: 5px;
+            }
+            .text div span a{
+                text-decoration: none;
+                color: dodgerblue;
+            }
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="hero" style="width: 100%;">
+        <nav>
+            <a href="#" class="logo">CodingBlog</a>
+            <ul>
+                <li><a href="./blogs.html">Home</a> </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="profile">
+                <img src="../utils/muhire.jpg" alt="">
+            </div>
+            <div class="text">
+                <div>
+                    <h2>Muhire Patrick</h2>
+                </div>
+                <div>
+                   <p>
+                    Software engineering candidate @RwCodingAcademy. 
+                    Building experience working with teams. blogger | Open source enthusiast.
+                   </p>
+                </div>
+                <div>
+                    <div>
+                        <a href="#">Github</a>
+                    </div>
+                    <div>
+                        <a href="#">Twitter</a>
+                    </div>
+                    <div>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div>
+                        <a href="#">Gist</a>
+                    </div>
+                </div>
+                <div>
+                    <p>You can reach out via <span><a href="#">pmuhire2002@gmail.com</a></span> </p>
+                </div>
+            </div>
+        </header>
+        <footer>
+            <p>Built with <span><i class="fa-regular fa-heart"></i></span> By Muhire Patrick</p>
+        </footer>
+    </div>
+</body>
+</html>

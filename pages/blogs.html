@@ -57,6 +57,10 @@
         .hero nav ul li{
             color: white;
         }
+        .hero nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
         header{
             color: white;
             margin-left: 5rem;
@@ -138,6 +142,36 @@
         footer p span{
             color: red;
         }
+        @media screen and (max-width: 660px) {
+            .hero nav .logo{
+                display: none;
+            }  
+            header{
+                margin-left: 1rem;
+                margin-top: 1rem;
+            } 
+            header div{
+                display: flex;
+                /* gap: 2px; */
+                flex-wrap: wrap;
+            }
+            header p{
+                width: 95%;
+            }
+            .card-container{
+                width: 90%;
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+            }
+            .card-container .card div{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            footer{
+                width: 100%;
+            }
+        }
 
     </style>
 </head>
@@ -146,8 +180,8 @@
         <nav>
             <a href="#" class="logo">CodingBlog</a>
             <ul>
-                <li>Home</li>
-                <li>About</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
         <div class="container">
@@ -205,7 +239,7 @@
                          FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also,
                          provides compatibility with a wide range of other libraries, li
                      </p>
-                     <!-- <a href="#" >Read more...</a> -->
+                     <a href="#" style="color: dodgerblue; margin-left: 1rem; font-size: 22px; text-decoration: none;">Read more...</a>
                  </div>
             </div>
             <div class="card-container">
@@ -233,7 +267,7 @@
                         FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also,
                         provides compatibility with a wide range of other libraries, li
                     </p>
-                    <!-- <a href="#" >Read more...</a> -->
+                    <a href="#" style="color: dodgerblue; margin-left: 1rem; font-size: 22px; text-decoration: none;">Read more...</a>
                 </div>
            </div>
            <div class="card-container">
@@ -261,14 +295,14 @@
                     FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also,
                     provides compatibility with a wide range of other libraries, li
                 </p>
-                <!-- <a href="#" >Read more...</a> -->
+                <a href="#" style="color: dodgerblue; margin-left: 1rem; font-size: 22px; text-decoration: none;">Read more...</a>
             </div>
        </div>
        
         </div>
         <footer>
             <p>Built with <span><i class="fa-regular fa-heart"></i></span> By Muhire Patrick</p>
-          </footer>
+        </footer>
     </div>
 </body>
 </html>
