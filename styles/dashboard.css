@@ -1,0 +1,163 @@
+:root{
+    --green: #CBBA9C;
+    --slate: #8892b0;
+    --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    background: #020C1B;
+    position: relative;
+}
+.hero .side-bar{
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    background-color: #020C1B;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    bottom: 0;
+    border-right: 1px solid #fff;
+}
+.side-bar .addBlog{
+    position: absolute;
+    bottom: 2rem;
+    left: .5rem;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+}
+.addBlog a{
+    width: 100%;
+    color: dodgerblue;
+    text-align: center;
+}
+.addBlog a i{
+    margin-top: 15px;
+}
+.active{
+    border-right: 4px solid dodgerblue;
+}
+.side-bar .projects{
+    position: absolute;
+    top: 15vh;
+    /* left: 2rem; */
+
+    position: absolute;
+    /* bottom: 2rem; */
+    left: .5rem;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    /* background: red; */
+}
+.projects i{
+    margin-top: 1rem;
+}
+.side-bar .profile{
+    width: 80%;
+    height: 60px;
+    position: absolute;
+    top: 1rem;
+    left: .5rem;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.side-bar .blogs{
+    position: absolute;
+    left: 2rem;
+    top: 29vh;
+}
+.hero .nav-bar{
+    margin-left: 5%;
+    padding-left: 10px;
+    width: 95%;
+    height: 10vh;
+    background: #000916;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.nav-bar .welcome{
+    color: white;
+    font-family: var(--font-mono);
+}
+.nav-bar .search{
+    width: 20%;
+    margin-right: 5rem;
+}
+.search .input-box{
+    width: 80%;
+    height: 30px;
+    display: flex;
+    border: 1px solid #CBBA9C;
+    border-radius: 20px;
+    align-items: center;
+}
+.search .input-box input{
+    border: none;
+    background: none;
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+}
+.input-box input::placeholder{
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-sans);
+}
+.input-box i{
+    color: white;
+    font-size: 20px;
+}
+.container{
+    width: 80%;
+    margin-left: 5%;
+    color: white;
+    /* text-align: center; */
+}
+.container h2{
+    text-align: center;
+}
+.container .cards{
+    display: flex;
+}
+.card {
+    /* background: #303C55; */
+    border-radius: 5px;
+    display: inline-block;
+    height: 100px;
+    margin: 1rem;
+    position: relative;
+    width: 150px;
+    font-size: 22px;
+     border: 1px solid #CBBA9C;
+}
+.card div{
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 30px;
+    width: 40px;
+    background-color: dodgerblue;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    padding: 3px;
+}
+.card p,
+.card h3{
+    margin-left: 10px;
+    color: white;
+    font-size: 24px;
+}
