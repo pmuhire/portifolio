@@ -78,6 +78,16 @@
     left: 2rem;
     top: 29vh;
 }
+.side-bar .trends{
+    position: absolute;
+    left: 2rem;
+    top: 40vh;
+}
+.side-bar .chat{
+    position: absolute;
+    left: 2rem;
+    top: 50vh;
+}
 .hero .nav-bar{
     margin-left: 5%;
     padding-left: 10px;
@@ -132,6 +142,8 @@
 }
 .container .cards{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card {
     /* background: #303C55; */
