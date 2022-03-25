@@ -437,7 +437,7 @@
 .card-form-content{
     float: right;
     width: 53%;
-    height: 80vh;
+    height: 120vh;
     margin-right: 3rem;
     margin-top: 5rem;
     color: white;
@@ -498,5 +498,30 @@
 .main-content textarea{
     height: 200px;
     border-top: none;
+}
+.card-form-content .cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed rgba(145, 158, 171, 0.32);
+    background: #919eab29;
+}
+.card-form-content .cover svg{
+    width: 60%;
+    height: 180px;
+}
+.cover div h2{
+    color: white;
+    text-align: center;
+}
+.cover div p{
+    padding-left: 15px;
+    color: #969696;
+    font-family: var(--font-sans);
+    font-size: 15px;
+}
+.cover div p span{
+    color: #00ab55;
+    text-decoration: underline;
 }
 
