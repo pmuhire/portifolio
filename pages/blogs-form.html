@@ -15,15 +15,15 @@
     <title>Create Blog</title>
 </head>
 <body>
-    <div class="hero">
+    <div class="hero" style="height: 120vh;">
         <div class="side-bar">
-            <div class="projects active">
+            <div class="projects ">
                 <i class="fa-solid fa-table-cells"></i>
             </div>
             <div class="blogs">
                 <i class="fa-solid fa-blog"></i>
             </div>
-            <div class="addBlog">
+            <div class="addBlog active">
                <a href="#"><i class="fa-solid fa-plus"></i></a>
             </div>
             <div class="trends">
@@ -45,8 +45,17 @@
             </div>
         </div>
         <div class="card-meta">
-             <div class="publish"></div>
-             <div class="enable-comments"></div>
+            <h2>Create New Blog</h2>
+             <div class="publish">
+                 <div class="circle"></div>
+                 <div class="line"></div>
+                 <h2>Publish</h2>
+             </div>
+             <div class="enable-comments">
+                <div class="circle"></div>
+                <div class="line"></div>
+                <h2>Enable comments</h2>
+             </div>
              <form action="#">
                 <div class="meta-tags">
                     <input type="text" placeholder="Tags">
@@ -55,7 +64,7 @@
                     <input type="text" placeholder="Meta title">
                 </div>
                 <div class="meta-description">
-                    <input type="text" placeholder="Meta description">
+                   <textarea name="description" id="description" cols="20" rows="4" placeholder="Description"></textarea>
                 </div>
                 <div class="meta-keywords">
                     <input type="text" placeholder="Meta Keywords">
@@ -63,7 +72,33 @@
                 <div class="post">Post</div>
                 <div class="preview">Preview</div>
              </form>
-            
+        </div>
+        <div class="card-form-content">
+            <form action="#">
+               <div class="meta-tags">
+                   <input type="text" placeholder="Blog title">
+               </div>
+               <div class="meta-description">
+                  <textarea name="description" id="description" cols="20" rows="4" placeholder="Description"></textarea>
+               </div>
+               <div class="content">
+                   <h2>Content</h2>
+                   <div class="toolbar">
+                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-bold"></i>
+                    <i class="fa-solid fa-italic"></i>
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-strikethrough"></i>
+                    <i class="fa-solid fa-list-ol"></i>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-block-quote"></i>
+                    <i class="fa-solid fa-image"></i>
+                   </div>
+                   <div class="main-content">
+                       <textarea name="content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
+                   </div>
+               </div>
+            </form>
         </div>
     </div>
 </body>

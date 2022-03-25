@@ -185,13 +185,14 @@
     border: 1px solid #343c47;
     border-radius: 5px;
     padding: 4.6px;
+   
 }
 .container .latest span i{
-    color: white;
+    color: #343c47;
     font-size: 13px;
 }
 .container .latest h3{
-    color: white;
+    color: #343c47;
 }
 .container .cards{
     padding-left: 4rem;
@@ -310,6 +311,192 @@
     border-radius: 5px 5px 0 0;
   }
   
-  /* .archive {
-    display: none;
-  } */
+
+
+  /* META FORM */
+.card-meta{
+    float: left;
+    width: 30%;
+    height: 80vh;
+    margin-left: 9rem;
+    margin-top: 5rem;
+    color: white;
+    background: #04152b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 0px, rgb(0 0 0 / 12%) 0px 12px 18px -4px;
+}
+.card-meta .publish{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: 1rem;
+}
+.publish .circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background: #00ab55;
+    left: 1.2rem;
+}
+.publish .line{
+    width: 35px;
+    height: 11px;
+    border-radius: 6px;
+    position: absolute;
+    background: #00ab56a1;
+    top: 0.2rem;
+    left: 1.2rem;
+}
+.publish h2{
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-mono);
+    margin-right: 20px;
+}
+.card-meta .enable-comments{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: .5rem;
+}
+.enable-comments .circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background: #00ab55;
+    left: 1.2rem;
+}
+.enable-comments .line{
+    width: 35px;
+    height: 11px;
+    border-radius: 6px;
+    position: absolute;
+    background: #00ab56a1;
+    top: 0.2rem;
+    left: 1.2rem;
+}
+.enable-comments h2{
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-mono);
+    margin-right: 16px;
+}
+
+.card-meta form{
+    width: 90%;
+    background-color: none;
+    margin-left: 1.5rem;
+}
+.card-meta form div{
+    width: 100%;
+    margin-top: 1rem;
+}
+.card-meta form div input{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #343c47;
+    background: none;
+}
+.card-meta form div textarea{
+    width: 100%;
+    height: 85px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #343c47;
+    background: none;
+}
+.card-meta form .post{
+    width: 110px;
+    height: 35px;
+    background: #00ab55;
+    padding-top: 4px;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute
+}
+.card-meta form .preview{
+    width: 110px;
+    height: 35px;
+    padding-top: 4px;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 20rem;
+    border: 1px solid #343c47;
+}
+
+.card-form-content{
+    float: right;
+    width: 53%;
+    height: 80vh;
+    margin-right: 3rem;
+    margin-top: 5rem;
+    color: white;
+    background: #04152b;
+    /* text-align: center; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 0px, rgb(0 0 0 / 12%) 0px 12px 18px -4px;
+}
+.card-form-content h2{
+    color: #343c47;
+}
+.card-form-content form{
+    width: 90%;
+    background-color: none;
+    margin-left: 1.5rem;
+}
+.card-form-content form div{
+    width: 100%;
+    margin-top: 1rem;
+}
+.card-form-content form div input{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #343c47;
+    background: none;
+}
+.card-form-content form div textarea{
+    width: 100%;
+    /* height: 85px; */
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    /* border: 1px solid #343c47; */
+    background: none;
+}
+.card-form-content .content .toolbar{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    padding-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #343c47;
+    background: none;
+    text-align: center;
+    letter-spacing: 8px;
+    color: #343c47;
+}
+.toolbar i:hover{
+    color: #00ab55;
+}
+.content .main-content{
+    margin-top: 0px;
+    
+}
+.main-content textarea{
+    height: 200px;
+    border-top: none;
+}
+
