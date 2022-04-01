@@ -116,8 +116,12 @@
                 border: 1px solid #CBBA9C;
                 border-radius: 8px;
             }
+            input:invalid:required{
+                border: 2px dashed red;
+            }
         }
     </style>
+    <script src="../index.js"></script>
 </head>
 <body>
     <div class="hero">
@@ -128,10 +132,10 @@
             <h2>Welcome Back</h2>
             <form action="./dashboard.html">
                 <div>
-                    <input type="text" placeholder="Username or Email">
+                    <input type="text" placeholder="Username or Email" id="email" required>
                 </div>
                 <div>
-                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="password" required>
                 </div>
                 <div class="forgot-password" style="display: flex;margin-top: -1.5rem; margin-bottom: -1.5rem;">
                     <div style="display: flex; width: 50%;" class="first">
@@ -144,7 +148,7 @@
                         <a href="#" style="text-decoration: none;  margin-top: 10px; font-size: 20px;">Forgot password?</a>
                     </div>
                 </div>
-                <button type="submit">Sign in</button>
+                <button type="submit" onclick="store()">Sign in</button>
             </form>
         </div>
     </div>
