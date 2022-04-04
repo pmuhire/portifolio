@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        :root{
+            --green: #CBBA9C;
+            --slate: #8892b0;
+            --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+            --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero{
+            background-color: #020C1B;
+            width: 100%;
+            height: auto;
+        }
+        .hero nav{
+            width: 100%;
+            height: 10vh;
+            background: #000916;
+            display: flex;
+
+        }
+        .hero nav ul{
+            display: flex;
+            color: #8892b0;
+            gap: 30px;
+            justify-content: start;
+            margin-left: 5rem;
+            padding-top: 1.2rem;
+            list-style: none;
+            font-size: 25px;
+        }
+        .hero nav .logo{
+            margin-top: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: clamp(20px, 8vw, 30px);
+            font-family: var(--font-mono);
+        }
+        .hero nav ul li{
+            color: white;
+        }
+        .hero nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        header{
+            width: 95%;
+            height: 150px;
+            display: flex;
+            margin-left: 4rem;
+            padding-top: 2rem;
+        }
+        header .profile{
+            width: 11%;
+            height: 100px;
+        }
+        header .profile img{
+            width: 70%;
+            height: 100px;
+            border-radius: 100%;
+        }
+        header .name{
+            margin-top: 0rem;
+        }
+        .name h2{
+            color: white;
+            font-size: clamp(20px, 8vw, 60px);
+        }
+        .name p{
+            color: var(--slate);
+            font-size: 20px;
+        }
+        .container{
+            width: 85%;
+            margin-left: 5rem;
+            margin-top: 10px;
+            border: 1px solid var(--green);
+            text-align: center;
+            border-radius: 10px;
+        }
+        .container p{
+            /* width: 95%; */
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="#" class="logo">CodingBlog</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="profile">
+                <img src="../utils/muhire.jpg" alt="profile">
+            </div>
+            <div class="name">
+                <h2>Why to choose Nextjs</h2>
+                <p class="date">12-07-2022</p>
+            </div>
+        </header>
+        <hr style="width: 85%; color: white; height: 1px; margin-left: 5rem;">
+        <div class="container">
+            <p>Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also, provides 
+                compatibility with a wide range of other libraries, li
+                Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also, provides 
+                compatibility with a wide range of other libraries, li
+                Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also, provides 
+                compatibility with a wide range of other libraries, li
+                Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also, provides 
+                compatibility with a wide range of other libraries, li
+                Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also, provides 
+                compatibility with a wide range of other libraries, li
+                Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also, provides 
+                compatibility with a wide range of other libraries, li
+                Nestjs is a framework for building efficient, scalable [Nodejs] server-side applications. It uses modern JavaScript is built with [TypeScript] (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).Under the hood, Nest makes use of [Express], but also, provides 
+                compatibility with a wide range of other libraries, li
+            </p>
+        </div>
+    </div>
+</body>
+</html>
