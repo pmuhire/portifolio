@@ -5,127 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .hero{
-            width: 100%;
-            height: 90vh;
-            background-color: #020C1B;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .hero .vector{
-            width: 40%;
-            height: 50%;
-        }
-        .vector img{
-            width: 100%;
-            height: 100%;
-        }
-        .hero .login-form{
-            width: 40%;
-            height: 50%;
-        }
-        .login-form h2{
-            color: white;
-            font-size: 30px;
-            padding-left: 6rem;
-        }
-        .login-form form{
-            width: 90%;
-            height: auto;
-            padding-left: 3rem;
-        }
-        .login-form div{
-            padding: 10px;
-        }
-        .login-form form div input{
-            width: 85%;
-            height: 40px;
-            padding: 5px;
-            background: #C4C4C4;
-            border: 1px solid #CBBA9C;
-            border-radius: 8px;
-        }
-        input::placeholder{
-            color: var(--slate);
-            font-size: 18px;
-        }
-        button{
-            width: 85%;
-            height: 40px;
-            margin-left: 7px;
-            color: #020C1B;
-            background: #C4C4C4;
-            border: 1px solid #CBBA9C;
-            border-radius: 8px;
-            font-size: 20px;
-        }
-        .forgot-password .second a{ 
-            color: white;
-        }
-        footer{
-            height: 10vh;
-            background-color: #020C1B;
-            color: white;
-            text-align: center;
-            font-size: 20px;
-        }
-        footer p span a{
-            text-decoration: none;
-            color: dodgerblue;
-        }
-        @media screen and (max-width: 660px) {
-            .hero{
-                align-items: center;
-                justify-content: start;
-            }
-            .vector{
-                display: none;
-            }
-            .hero .login-form{
-                width: 95%;
-                height: 50%;
-            }
-            .login-form h2{
-                color: white;
-                font-size: 30px;
-                padding-left: 6rem;
-                margin-top: -5rem;
-            }
-            .login-form div{
-                padding: 15px 1px;
-            }
-            .login-form form{
-                width: 100%;
-            }
-            .login-form form div{
-                width: 100%;
-                padding-left: -1rem;
-            }
-            .login-form form div input{
-                width: 100%;
-                height: 40px;
-                padding: 5px;
-                background: #C4C4C4;
-                border: 1px solid #CBBA9C;
-                border-radius: 8px;
-            }
-            input:invalid:required{
-                border: 2px dashed red;
-            }
-        }
-    </style>
-<<<<<<< HEAD
-    
-=======
-    <script src="../index.js"></script>
->>>>>>> 49215b38afdc7911e3944d2ec097dee5b6d18442
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
     <div class="hero">
@@ -152,12 +32,12 @@
                         <a href="#" style="text-decoration: none;  margin-top: 10px; font-size: 20px;">Forgot password?</a>
                     </div>
                 </div>
-                <button type="submit" onclick="store()">Sign in</button>
+                <button type="submit">Sign in</button>
             </form>
         </div>
     </div>
     <footer>
-        <p>Don't an account <span><a href="./login.html">Sign Up</a></span></p>
+        <p>Don't an account <span><a href="./signup.html">Sign Up</a></span></p>
     </footer>
     <script src="../index.js"></script>
 </body>
